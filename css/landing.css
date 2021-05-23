@@ -1,0 +1,102 @@
+body {
+    background-color: #f5f0e1;
+}
+
+.container-fluid {
+    
+}
+
+.navbar {
+    padding: 0;
+    background-color: white;
+}
+
+.navbar-brand {
+    width: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+
+.logo-narrow {
+    display: none;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 1rem;
+    width: 12rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.name {
+    display: inline-block;
+    font-size: 5rem;
+}
+
+.tagline {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.navbar-nav {
+    gap: 4px;
+}
+
+.navbar-collapse {
+    align-self: flex-start;
+}
+
+.navbar-toggler {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../pictures/menu-light.png');
+}
+
+#current {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.active {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: black;
+}
+
+.active:hover {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+@media (max-width: 768px) {
+    .logo-wide {
+        display: none;
+    }
+
+    .logo-narrow {
+        display: block;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
+        margin-bottom: 1rem;
+    }
+}
