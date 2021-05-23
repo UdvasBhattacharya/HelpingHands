@@ -96,19 +96,31 @@ hr /*horizontal line under Content 1 heading*/
     margin-bottom: 10%;
 }
 
-.eventitle
+.eventitle /*title of the event*/
 {
     color: #f5f0e1;
     font-size: 4.5rem;
     padding-top: 5%;
     padding-left: 5%;
+    font-family: 'Chela One', cursive;
+    border: 1px solid transparent;
+}
+.timeleft
+{
+    color: #f5f0e1;
+    font-size: 4.5rem;
+    padding-top: 5%;
+    padding-left: 65%;
+    margin-bottom: 0;
+    font-family: 'Cairo', sans-serif;
 }
 
 .timer{ /*timer*/
     margin-bottom: 20px;
     color: #f5f0e1;
-    padding-top: 10%;
+    padding-top: 0px;
     padding-left: 65%;
     font-size: 5rem;
     background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    font-family: 'Cairo', sans-serif;
 }
