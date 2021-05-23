@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HHcc</title>
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+    </head>
+    <body>
+        <header>
+            <!--logo top left-->
+            <div class="logo">
+                <img src="pictures/logo.jpeg">
+            </div>
+            <!--scrolling through pages-->
+            <div class="pages">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Heading/title-->
+            <div class="title">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> <!--importing the font-->
+                <h1>Helping Hands</h1>
+                <h5>cooperation circle</h5>
+            </div>
+            <div class="slab"> <!--to differentiate backgrounds-->
+            </div>
+            <!--The first writeup-->
+            <div class="content1">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet"> 
+                <h1 style="font-size: 3rem; margin-bottom: 0;">Our Story</h1>
+                <hr>
+                <p>
+                    The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
+
+In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).
+The animation effect of this component is dependent on the prefers-reduced-motion media query. See the reduced motion section of our accessibility documentation.
+
+Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.
+Example
+
+Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.
+
+The .active class needs to be added to one of the slides otherwise the carousel will not be visible. Also be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a data-bs-target attribute (or href for links) that matches the id of the .carousel element.
+Slides only
+
+Here’s a carousel with slides only. Note the presence of the .d-block and .w-100 on carousel images to prevent browser default image alignment.
+                </p>
+            </div>
+            <!--Ongoing Event-->
+            <div class="event">
+
+                <p class="eventitle">Lockdown Food-Drive for Kolkata Slum Dwellers</p>
+
+
+            <div class="hero">
+                
+                <p class="timer" id="demo"></p>
+            </div>
+        </div>
+        </header>
+    </body>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 15, 2021 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</html>

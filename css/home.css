@@ -1,0 +1,114 @@
+ul /*takes the menu to the right hand side*/
+{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li /*displays the menu list horizontally from vertically*/
+{
+    display: inline-block;
+}
+ul li a /*makes the menu list proper with spacing*/
+{
+    text-decoration: none;
+    color: #1e3d59;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover /*gives the menu list hover effect*/
+{
+    background-color: #29648a;
+    color: #f5f0e1;
+}
+ul li.active a /*stagnates the hover effect to the current page*/
+{
+    background-color: #29648a;
+    color: #f5f0e1;
+}
+.logo img /*positions the logo*/
+{
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.title /*takes care of the main title*/
+{
+    font-size: 3.2rem ;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    font-family: 'Acme', sans-serif; /*changing the font*/
+}
+.title h5 /*takes care of the second title*/
+{
+    font-size: 100% ;
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.slab /*for the slab of multiple background*/
+{
+    background-color: #ecc19c;
+    height: 250px;
+}
+body /*the main body background*/
+{
+    background-color: #f5f0e1;
+}
+.content1 /*the first write up*/
+{
+    width: 800px;
+    height: auto;
+    background-color: #f8e9a1;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 26%;
+    color: #1d3c45;
+    font-size: larger;
+    font-family: 'Domine', serif;
+    word-spacing: 6px;
+}
+hr /*horizontal line under Content 1 heading*/
+{
+    border: none;
+    background-color: #29648a;
+    width: 10rem;
+    height: 5px;
+
+    
+}
+.event /*ongoing event*/
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/pictures/fooddrive.jpg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50rem;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+}
+
+.eventitle
+{
+    color: #f5f0e1;
+    font-size: 4.5rem;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.timer{ /*timer*/
+    margin-bottom: 20px;
+    color: #f5f0e1;
+    padding-top: 10%;
+    padding-left: 65%;
+    font-size: 5rem;
+    background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
