@@ -6,15 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="pictures/favicon.png">
-        <title>HHcc</title>
+        <title>Helping Hands</title>
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="stylesheet" type="text/css" href="css/landing.css">
     </head>
 
@@ -34,7 +35,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" id="current" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active nav-top" id="current" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Projects</a>
@@ -46,36 +47,43 @@
                     <a class="nav-link active" aria-current="page" href="#">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                    <a class="nav-link active nav-bottom" aria-current="page" href="#">Contact us</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-          <div class="content1">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet"> 
-            <h1 style="font-size: 3rem; margin-bottom: 0;">Our Story</h1>
-            <hr>
-            <p>
-                The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
 
-In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).
-The animation effect of this component is dependent on the prefers-reduced-motion media query. See the reduced motion section of our accessibility documentation.
-
-Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.
-Example
-
-Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.
-
-The .active class needs to be added to one of the slides otherwise the carousel will not be visible. Also be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a data-bs-target attribute (or href for links) that matches the id of the .carousel element.
-Slides only
-
-Here’s a carousel with slides only. Note the presence of the .d-block and .w-100 on carousel images to prevent browser default image alignment.
+          <!-- Body -->
+          <div class="content">
+            <div class="content-container">
+              <h1>Our Story</h1>
+              <hr id="heading-underline">
+              <p>
+                The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators. In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.). The animation effect of this component is dependent on the prefers-reduced-motion media query. See the reduced motion section of our accessibility documentation. Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.<br><strong>Example</strong><br>Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.The .active class needs to be added to one of the slides otherwise the carousel will not be visible. Also be sure to set a unique id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a data-bs-target attribute (or href for links) that matches the id of the .carousel element.Slides only. Here’s a carousel with slides only. Note the presence of the .d-block and .w-100 on carousel images to prevent browser default image alignment.
             </p>
-        </div>
+            </div>
+          </div>
+
+          <!-- Event -->
+          <div class="backdrop">
+            <div class="event">
+              <div class="event-name">
+                Lockdown Food-Drive for Kolkata Slum Dwellers
+              </div>
+              <div class="event-dock">
+                <div class="card">
+                  <div class="card-body"></div>
+                </div>
+                <div class="card">
+                  <div class="card-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <!--Ongoing Event-->
-        <div class="event">
+        <div>
 
             <p class="eventitle">
                 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -152,3 +160,5 @@ Here’s a carousel with slides only. Note the presence of the .d-block and .w-1
         }, 1000);
         </script>
 </html>
+
+<!-- https://codepen.io/janoschvg/pen/QwmdwY -->

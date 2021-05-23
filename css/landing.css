@@ -2,9 +2,7 @@ body {
     background-color: #f5f0e1;
 }
 
-.container-fluid {
-    
-}
+/* Navbar */
 
 .navbar {
     padding: 0;
@@ -79,6 +77,74 @@ body {
     background-color: #29648a;
 }
 
+/* Body */
+
+.content {
+    font-family: 'Domine', serif;
+    text-align: center;
+}
+
+.content-container {
+    margin: 3rem 0;
+    width: 85%;
+    display: inline-block;
+    background-color: #f8e9a1;
+    text-align: center;
+    padding: 0 5% 0.5rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0.75rem;
+}
+
+#heading-underline {
+    width: 6rem;
+    border: none;
+    height: 4px;
+    color: #1d3c45;
+    background-color: #1d3c45;
+    display: inline-block;
+    opacity: 1;
+    margin-top: 0.25rem;
+}
+
+/* Event */
+
+.backdrop {
+    background-image: url('../pictures/fooddrive.jpg');
+    height: 30rem;
+    background-position: top;
+    background-size: cover;
+}
+
+.event {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 100%;
+    width: 100%;
+}
+
+.event-name {
+    font-family: 'Chela One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.event-dock {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 45%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
 @media (max-width: 768px) {
     .logo-wide {
         display: none;
@@ -96,7 +162,23 @@ body {
         font-size: 1rem;
     }
 
-    .navbar-collapse {
+    .nav-top {
+        margin-top: 1rem;
+    }
+
+    .nav-bottom {
         margin-bottom: 1rem;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    .backdrop {
+        background-position: left;
+    }
+
+    .event-name {
+        font-size: 2.5rem;
     }
 }
