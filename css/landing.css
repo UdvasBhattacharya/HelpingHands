@@ -122,7 +122,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.33);
     height: 100%;
     width: 100%;
-    padding-bottom: 1rem;
+    padding: 1.5rem 0 2.5rem 0;
 }
 
 .event-name {
@@ -132,8 +132,20 @@ h1 {
     font-size: 4rem;
 }
 
+.contribute-btn {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.contribute-btn-background {
+    padding: 0.25rem;
+    background-color: white;
+    display: inline-block;
+    border-radius: 9px;
+}
+
 .event-dock {
-    margin-top: 10rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -158,6 +170,7 @@ h1 {
 
 .progress {
     height: 2rem;
+    margin-top: 0.5rem;
 }
 
 .card-info {
@@ -185,6 +198,32 @@ h1 {
     padding-bottom: 4px;
     background-color: orange;
     font-size: 1rem;
+}
+
+.target-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bottombar {
+    margin-top: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottombar-brand {
+    white-space: nowrap;
+}
+
+.bottombar-text {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -227,10 +266,23 @@ h1 {
     }
 
     .card {
-        width: 100%;
+        width: 95%;
+        align-self: center;
     }
 
     .event-name {
         font-size: 2.5rem;
+    }
+
+    .bottombar {
+        display: block;
+    }
+
+    .bottombar-text {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
     }
 }
