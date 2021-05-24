@@ -206,6 +206,26 @@ h1 {
     font-size: 1.5rem;
 }
 
+.bottombar {
+    margin-top: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottombar-brand {
+    white-space: nowrap;
+}
+
+.bottombar-text {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .logo-wide {
         display: none;
@@ -252,5 +272,17 @@ h1 {
 
     .event-name {
         font-size: 2.5rem;
+    }
+
+    .bottombar {
+        display: block;
+    }
+
+    .bottombar-text {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
     }
 }
