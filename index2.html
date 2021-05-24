@@ -73,10 +73,43 @@
               </div>
               <div class="event-dock">
                 <div class="card">
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                    <h3>Donations collected</h3>
+                    <div class="">
+                      <span class="collected">₹13,911</span> out of <span class="target">₹2,00,000</span>
+                    </div>
+                    <div class="progress">
+                      <!-- To change donations collected -->
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 7%"></div>
+                    </div>
+                    <div class="card-info">
+                      Updated 24 May, 2021, 11:37.
+                    </div>
+                  </div>
                 </div>
                 <div class="card">
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                    <h3>Days to target</h3>
+                    <div class="timer">
+                      <div class="card calendar-text">
+                        <span id="target-days"></span>
+                        <div class="calendar-footer">Days</div>
+                      </div>
+                      <div class="card calendar-text">
+                        <span id="target-hours"></span>
+                        <div class="calendar-footer">Hours</div>
+                      </div>
+                      <div class="card calendar-text">
+                        <span id="target-minutes"></span>
+                        <div class="calendar-footer">Minutes</div>
+                      </div>
+                      <div class="card calendar-text">
+                        <span id="target-seconds"></span>
+                        <div class="calendar-footer">Seconds</div>
+                      </div>
+                    </div>
+                    <div class="card-info" id="status"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,10 +142,9 @@
             <div class="values">
                 <p class="rupees">
                     ₹13,911 out of ₹2,00,000
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%; height: 2rem;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
                 </p>
+                
+                
 
                 <p class="timer" id="demo">
                     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -147,15 +179,24 @@
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
+
+          document.getElementById("target-days").innerHTML = days;
+          if (days<10) { document.getElementById("target-days").innerHTML = "0" + days; }
+          document.getElementById("target-hours").innerHTML = hours;
+          if (hours<10) { document.getElementById("target-hours").innerHTML = "0" + hours; }
+          document.getElementById("target-minutes").innerHTML = minutes;
+          if (minutes<10) { document.getElementById("target-minutes").innerHTML = "0" + minutes; }
+          document.getElementById("target-seconds").innerHTML = seconds;
+          if (seconds<10) { document.getElementById("target-seconds").innerHTML = "0" + seconds; }
         
           // If the count down is finished, write some text
-          if (distance < 0) {
+          if (distance <= 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("target-days").innerHTML = 0;
+            document.getElementById("target-hours").innerHTML = 0;
+            document.getElementById("target-minutes").innerHTML = 0;
+           document.getElementById("target-seconds").innerHTML = 0;
+            document.getElementById("status").innerHTML = "EXPIRED";
           }
         }, 1000);
         </script>
