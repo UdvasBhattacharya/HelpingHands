@@ -206,6 +206,26 @@ h1 {
     font-size: 1.5rem;
 }
 
+.bottombar {
+    margin-top: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottombar-brand {
+    white-space: nowrap;
+}
+
+.bottombar-text {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .logo-wide {
         display: none;
