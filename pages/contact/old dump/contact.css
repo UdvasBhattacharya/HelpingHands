@@ -6,15 +6,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.navbar-expand-md
-{
-    background-color: #e5e5dc;
-}
 .contact
 {
     position: relative;
     min-height: 100vh;
-    /*padding: 50px 100px;*/
+    padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,11 +144,11 @@
     padding: 10px;
     font-size: 18px;
 }
-@media (max-width: 768px) /*768  991*/
+@media (max-width: 991px) /*768*/
 {
     .contact
     {
-        padding: 0px;
+        padding: 50px;
     }
     .container
     {
