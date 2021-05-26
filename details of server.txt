@@ -1,6 +1,6 @@
 
 Control panel username: 	b16_28688014
-Control panel password: 	**********
+Control panel password: 	germany
 Control panel URL: 	cpanel.byethost16.com
 MySQL username 	b16_28688014
 MySQL password: 	**********
