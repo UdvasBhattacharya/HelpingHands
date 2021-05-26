@@ -8,4 +8,4 @@ MySQL hostname: 	sql306.byethost16.com
 FTP username: 	b16_28688014
 FTP password: 	**********
 FTP host name: 	ftp.byethost16.com
-Your Website URL: 	http://helpinghands.byethost16.com
+Your Website URL: http://helpinghands.byethost16.com

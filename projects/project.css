@@ -63,7 +63,7 @@ h1 {
     text-align: center;
     font-family: 'Domine', serif;
     font-size: 3rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 #heading-underline {
@@ -78,7 +78,6 @@ h1 {
 }
 
 .content {
-    margin-top: 1.5rem;
     padding: 0 1.5rem;
 }
 
@@ -131,14 +130,6 @@ h1 {
     /* Navbar */
     .navbar-brand {
         width: 75%;
-    }
-
-    .name {
-        font-size: 2rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
     }
 
     .nav-top {
