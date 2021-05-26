@@ -23,7 +23,7 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url('../pictures/menu-light.png');
+    background-image: url('/assets/menu-light.png');
 }
 
 #current {
@@ -86,7 +86,7 @@ h1 {
 /* Event */
 
 .backdrop {
-    background-image: url('../pictures/fooddrive.jpg');
+    background-image: url('/assets/fooddrive.jpg');
     background-position: top;
     background-size: cover;
 }
