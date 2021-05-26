@@ -7,6 +7,7 @@
 
 .navbar-brand {
     display: inline-block;
+    width: 50%;
 }
 
 .navbar-nav {
@@ -51,6 +52,11 @@
 
 body {
     background-color: #f5f0e1;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .content {
@@ -197,10 +203,8 @@ h1 {
 
 .bottombar-text {
     width: 50%;
-}
-
-a {
-    text-decoration: none;
+    text-align: end;
+    margin-right: 0.5rem;
 }
 
 /* Responsive */
