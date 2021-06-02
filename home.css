@@ -140,6 +140,7 @@ h1 {
 .collected {
     color: green;
     font-size: 4rem;
+    white-space: nowrap;
 }
 
 .target {
@@ -215,14 +216,6 @@ h1 {
         width: 75%;
     }
 
-    .name {
-        font-size: 2rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
-    }
-
     .nav-top {
         margin-top: 1rem;
     }
@@ -274,5 +267,20 @@ h1 {
         margin-bottom: 0;
         padding: 0.5rem;
         text-align: end;
+    }
+}
+
+/* Ultra small screens */
+@media (max-width: 356px) {
+    .collected {
+        font-size: 1.5rem;
+    }
+
+    #target-days, #target-hours, #target-minutes, #target-seconds {
+        font-size: 1.5rem;
+    }
+
+    .calendar-footer {
+        font-size: 0.5rem;
     }
 }
