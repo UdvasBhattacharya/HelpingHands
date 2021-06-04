@@ -1,4 +1,3 @@
-
 Control panel username: 	b16_28688014
 Control panel password: 	germany
 Control panel URL: 	cpanel.byethost16.com
