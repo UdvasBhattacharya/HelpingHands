@@ -1,3 +1,29 @@
+.default, .lightmode {
+    --background-color: #f5f0e1;
+    --content-background-color: rgba(248, 233, 161, 0.9);
+    --text-color: #000;
+    --event-background-color: rgba(255, 255, 255, 0.9);
+    --bottombar-filter: invert(0%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #24305E;
+        --content-background-color: rgba(0, 0, 0, 0.9);
+        --text-color: #fff;
+        --event-background-color: rgba(0, 0, 0, 0.9);
+        --bottombar-filter: invert(100%);
+    }
+}
+
+.darkmode {
+    --background-color: #24305E;
+    --content-background-color: #000;
+    --text-color: #fff;
+    --event-background-color: rgba(0, 0, 0, 0.8);
+    --bottombar-filter: invert(100%);
+}
+
 /* Navbar */
 
 .navbar {
@@ -13,7 +39,8 @@
 /* Body */
 
 body {
-    background-color: #f5f0e1;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .center {
