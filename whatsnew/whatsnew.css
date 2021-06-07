@@ -1,0 +1,167 @@
+.default, .lightmode {
+    --background-color: #f5f0e1;
+    --content-background-color: rgba(248, 233, 161, 0.9);
+    --text-color: #000;
+    --event-background-color: rgba(255, 255, 255, 0.9);
+    --bottombar-filter: invert(0%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #24305E;
+        --content-background-color: rgba(0, 0, 0, 0.9);
+        --text-color: #fff;
+        --event-background-color: rgba(0, 0, 0, 0.9);
+        --bottombar-filter: invert(100%);
+    }
+}
+
+.darkmode {
+    --background-color: #24305E;
+    --content-background-color: #000;
+    --text-color: #fff;
+    --event-background-color: rgba(0, 0, 0, 0.8);
+    --bottombar-filter: invert(100%);
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+    background-color: white;
+}
+
+.navbar-brand {
+    display: inline-block;
+    width: 50%;
+}
+
+.navbar-nav {
+    gap: 4px;
+}
+
+.navbar-collapse {
+    align-self: flex-start;
+}
+
+.navbar-toggler {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/assets/menu-light.png');
+}
+
+#current {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+.nav-link {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.active {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: black;
+}
+
+.active:hover {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+/* Body */
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+.content {
+    padding: 0.5rem;
+}
+
+/* Bottombar */
+
+.bottombar {
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: var(--bottombar-filter);
+    -webkit-filter: var(--bottombar-filter);
+}
+
+.bottombar-brand {
+    width: 40%;
+    display: inline-block;
+}
+
+.bottombar-text {
+    width: 50%;
+    text-align: end;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+/* Theme Modal */
+
+.modal-content {
+    background-color: var(--event-background-color);
+}
+
+.theme-group {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-brand {
+        width: 75%;
+    }
+
+    .nav-top {
+        margin-top: 1rem;
+    }
+
+    .nav-bottom {
+        margin-bottom: 1rem;
+    }
+
+    /* Bottombar */
+
+    .bottombar {
+        display: block;
+    }
+
+    .bottombar-brand {
+        width: 75%;
+    }
+
+    .bottombar-text {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
+    }
+}
