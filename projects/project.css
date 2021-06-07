@@ -98,6 +98,7 @@ h1 {
     background-position: center;
     background-size: cover;
     border-radius: 0.25rem;
+    text-align: center;
 }
 
 .content {
