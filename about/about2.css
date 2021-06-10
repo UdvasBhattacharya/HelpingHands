@@ -1,0 +1,218 @@
+.default, .lightmode {
+    --background-color: #f5f0e1;
+    --content-background-color: rgba(248, 233, 161, 0.9);
+    --text-color: #000;
+    --event-background-color: rgba(255, 255, 255, 0.9);
+    --bottombar-filter: invert(0%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #24305E;
+        --content-background-color: rgba(0, 0, 0, 0.9);
+        --text-color: #fff;
+        --event-background-color: rgba(0, 0, 0, 0.9);
+        --bottombar-filter: invert(100%);
+    }
+}
+
+.darkmode {
+    --background-color: #24305E;
+    --content-background-color: #000;
+    --text-color: #fff;
+    --event-background-color: rgba(0, 0, 0, 0.8);
+    --bottombar-filter: invert(100%);
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+    background-color: white;
+}
+
+.navbar-brand {
+    display: inline-block;
+    width: 50%;
+}
+
+.navbar-nav {
+    gap: 4px;
+}
+
+.navbar-collapse {
+    align-self: flex-start;
+}
+
+.navbar-toggler {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/assets/menu-light.png');
+}
+
+#current {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+.nav-link {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.active {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: black;
+}
+
+.active:hover {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+/* Body */
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+.content {
+    padding: 0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.team-img {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('/assets/udvas.jpg');
+    background-size: contain;
+}
+
+.team-overlay {
+    border-radius: 2.5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+}
+
+.team-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+/* Bottombar */
+
+.bottombar {
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: var(--bottombar-filter);
+    -webkit-filter: var(--bottombar-filter);
+}
+
+.bottombar-brand {
+    width: 40%;
+    display: inline-block;
+}
+
+.bottombar-text {
+    width: 50%;
+    text-align: end;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+/* Theme Modal */
+
+.modal-content {
+    background-color: var(--event-background-color);
+}
+
+.theme-group {
+    text-align: center;
+}
+
+/* Floating Media Buttons */
+
+.fl-fl {
+    background: #000000;
+    letter-spacing: 3px;
+    padding: 0.5rem 0.7rem 0.5rem 0.8rem;
+    position: fixed;
+    right: 0rem;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+  
+  .fa {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+  
+  .fl-fl:hover {
+    right: 0;
+  }
+  
+  .fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px!important;
+    vertical-align: top!important;
+  }
+  
+  .float-fb {
+    top: 112px;
+  }
+  
+  .float-tw {
+    top: 168px;
+  }
+  
+  .float-gp {
+    top: 224px;
+  }
+  
+  .float-rs {
+    top: 280px;
+  }
