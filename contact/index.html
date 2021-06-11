@@ -15,7 +15,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/landing.css">
         <link rel="stylesheet" type="text/css" href="contact.css">
     </head>
     <body>
@@ -88,24 +87,32 @@
                 </div>
 
                 <div class="ContactForm">
-                    <form>
-                        <h2>Send Message</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Full Name</span>
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Send a message</div>
+                        <div class="mb-4">
+                          <label for="name">Name <span class="req">*</span></label>
+                          <input type="name" id="name" aria-label="name" class="form-control" placeholder="Your Name" required>
                         </div>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Email</span>
+                        <div class="mb-4">
+                          <label for="email">Email <span class="req">*</span></label>
+                          <input type="email" id="email" aria-label="email" class="form-control" placeholder="example@email.com" required>
                         </div>
-                        <div class="inputBox">
-                            <textarea required="required"></textarea>
-                            <span>Type your Message...</span>
+                        <div class="mb-4">
+                          <label for="message">Message <span class="req">*</span></label>
+                          <textarea type="text" id="message" aria-label="message" class="form-control" placeholder="Write your message" rows="4" draggable="false" style="resize: none;" required></textarea>
                         </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Send">
+                        <div class="mb-2">
+                          <button class="btn btn-primary" type="submit" id="submit" onclick="sendEmail()">
+                            Submit&emsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                          </button>
                         </div>
-                    </form>
+                    </div>
+                  </div>
+      
                 </div>
             </div>
         </section>
@@ -143,5 +150,12 @@
   </div>
 
   <script src="/js/theme.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_edYQMNHeFmfhEbFAiHm1x");
+    })();
+  </script>
+  <script src="/js/sendEmail.js"></script>
     </body>
 </html>
