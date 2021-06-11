@@ -227,7 +227,7 @@ h1 {
 /* Bottombar */
 
 .bottombar {
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -245,6 +245,37 @@ h1 {
     width: 50%;
     text-align: end;
     margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.social-group {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    margin: 1rem;
+    color: black;
+}
+
+#fb-icon:hover {
+    color: #4267B2;
+    filter: var(--bottombar-filter);
+}
+
+#ig-icon:hover {
+    color: #8a3ab9;
+    filter: var(--bottombar-filter);
+}
+
+#tw-icon:hover {
+    color: #1DA1F2;
+    filter: var(--bottombar-filter);
+}
+
+#wa-icon:hover {
+    color: #128C7E;
+    filter: var(--bottombar-filter);
 }
 
 /* Theme Modal */
@@ -253,79 +284,12 @@ h1 {
     text-align: center;
 }
 
-/* Floating Media Buttons */
-
-.fl-fl {
-    background: var(--inverse-text-color);
-    letter-spacing: 3px;
-    padding: 0.5rem 0.7rem 0.5rem 0.8rem;
-    position: fixed;
-    right: 0rem;
-    z-index: 1000;
-    font: normal normal 10px Arial;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-  }
-    
-  .fa {
-    font-size: 20px;
-    color: var(--text-color);
-    padding: 10px 0;
-    width: 40px;
-    margin-left: 8px;
-  }
-    
-  .fl-fl:hover {
-    right: 0;
-  }
-    
-  .fl-fl a {
-    color: var(--text-color);
-    text-decoration: none;
-    text-align: center;
-    line-height: 43px!important;
-    vertical-align: top!important;
-  }
-    
-  .float-fb {
-    top: 112px;
-  }
-  
-  #float-fb:hover {
-    color: #4267B2;
-  }
-    
-  .float-ig {
-    top: 168px;
-  }
-  
-  #float-ig:hover {
-    color: #8a3ab9;
-  }
-    
-  .float-wa {
-    top: 224px;
-  }
-  
-  #float-wa:hover {
-    color: #128C7E;
-  }
-    
-  .float-tw {
-    top: 280px;
-  }
-  
-  #float-tw:hover {
-    color: #1DA1F2;
-  }
-
 /* Responsive */
+
 @media (max-width: 768px) {
 
     /* Navbar */
+
     .navbar-brand {
         width: 75%;
     }
@@ -396,25 +360,5 @@ h1 {
 
     .calendar-footer {
         font-size: 0.5rem;
-    }
-}
-
-@media (max-height: 340px) {
-    /* Floating Media Buttons */
-    
-    .float-fb {
-        display: none;
-    }
-
-    .float-ig {
-        display: none;
-    }
-
-    .float-wa {
-        display: none;
-    }
-
-    .float-tw {
-        display: none;
     }
 }
