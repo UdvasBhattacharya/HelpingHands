@@ -2,6 +2,7 @@
     --background-color: #f5f0e1;
     --content-background-color: rgba(248, 233, 161, 0.9);
     --text-color: #000;
+    --inverse-text-color: #fff;
     --event-background-color: rgba(255, 255, 255, 0.8);
     --bottombar-filter: invert(0%);
 }
@@ -10,7 +11,8 @@
     .default {
         --background-color: #24305E;
         --content-background-color: rgba(0, 0, 0, 0.9);
-        --text-color: #F8E9A1;
+        --text-color: #fff;
+        --inverse-text-color: #000;
         --event-background-color: rgba(0, 0, 0, 0.8);
         --bottombar-filter: invert(100%);
     }
@@ -19,11 +21,11 @@
 .darkmode {
     --background-color: #24305E;
     --content-background-color: #000;
-    --text-color: #F8E9A1;
+    --text-color: #fff;
+    --inverse-text-color: #000;
     --event-background-color: rgba(0, 0, 0, 0.8);
     --bottombar-filter: invert(100%);
 }
-
 
 /* Navbar */
 
@@ -251,6 +253,75 @@ h1 {
     text-align: center;
 }
 
+/* Floating Media Buttons */
+
+.fl-fl {
+    background: var(--inverse-text-color);
+    letter-spacing: 3px;
+    padding: 0.5rem 0.7rem 0.5rem 0.8rem;
+    position: fixed;
+    right: 0rem;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+    
+  .fa {
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+    
+  .fl-fl:hover {
+    right: 0;
+  }
+    
+  .fl-fl a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px!important;
+    vertical-align: top!important;
+  }
+    
+  .float-fb {
+    top: 112px;
+  }
+  
+  #float-fb:hover {
+    color: #4267B2;
+  }
+    
+  .float-ig {
+    top: 168px;
+  }
+  
+  #float-ig:hover {
+    color: #8a3ab9;
+  }
+    
+  .float-wa {
+    top: 224px;
+  }
+  
+  #float-wa:hover {
+    color: #128C7E;
+  }
+    
+  .float-tw {
+    top: 280px;
+  }
+  
+  #float-tw:hover {
+    color: #1DA1F2;
+  }
+
 /* Responsive */
 @media (max-width: 768px) {
 
@@ -325,5 +396,25 @@ h1 {
 
     .calendar-footer {
         font-size: 0.5rem;
+    }
+}
+
+@media (max-height: 340px) {
+    /* Floating Media Buttons */
+    
+    .float-fb {
+        display: none;
+    }
+
+    .float-ig {
+        display: none;
+    }
+
+    .float-wa {
+        display: none;
+    }
+
+    .float-tw {
+        display: none;
     }
 }
