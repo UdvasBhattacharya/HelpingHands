@@ -1,0 +1,364 @@
+.default, .lightmode {
+    --background-color: #f5f0e1;
+    --content-background-color: rgba(248, 233, 161, 0.9);
+    --text-color: #000;
+    --inverse-text-color: #fff;
+    --event-background-color: rgba(255, 255, 255, 0.8);
+    --bottombar-filter: invert(0%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #24305E;
+        --content-background-color: rgba(0, 0, 0, 0.9);
+        --text-color: #fff;
+        --inverse-text-color: #000;
+        --event-background-color: rgba(0, 0, 0, 0.8);
+        --bottombar-filter: invert(100%);
+    }
+}
+
+.darkmode {
+    --background-color: #24305E;
+    --content-background-color: #000;
+    --text-color: #fff;
+    --inverse-text-color: #000;
+    --event-background-color: rgba(0, 0, 0, 0.8);
+    --bottombar-filter: invert(100%);
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+    background-color: white;
+}
+
+.navbar-brand {
+    display: inline-block;
+    width: 50%;
+}
+
+.navbar-nav {
+    gap: 4px;
+}
+
+.navbar-collapse {
+    align-self: flex-start;
+}
+
+.navbar-toggler {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/assets/menu-light.png');
+}
+
+#current {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+.nav-link {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.active {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: black;
+}
+
+.active:hover {
+    color: #f5f0e1;
+    background-color: #29648a;
+}
+
+/* Body */
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    font-family: 'Domine', serif;
+    text-align: center;
+}
+
+.content-container {
+    margin: 3rem 0;
+    width: 85%;
+    display: inline-block;
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 5% 0.5rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0.75rem;
+}
+
+#heading-underline {
+    width: 6rem;
+    border: none;
+    height: 4px;
+    color: #1d3c45;
+    background-color: #1d3c45;
+    display: inline-block;
+    opacity: 1;
+    margin-top: 0.25rem;
+}
+
+/* Event */
+
+.backdrop {
+    background-image: url('/assets/fooddrive.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+.event {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem 0 2.5rem 0;
+}
+
+.event-name {
+    font-family: 'Chela One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.contribute-btn {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.contribute-btn-background {
+    padding: 0.25rem;
+    background-color: white;
+    display: inline-block;
+    border-radius: 9px;
+}
+
+.event-dock {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 45%;
+    display: inline-block;
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.event-card {
+    background-color: var(--event-background-color);
+}
+
+.collected {
+    color: green;
+    font-size: 4rem;
+    white-space: nowrap;
+}
+
+.target {
+    color: red;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.progress {
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+.card-info {
+    text-align: end;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+}
+
+.calendar-text {
+    font-size: 3rem;
+    text-align: center;
+    width: 24%;
+    background-color: white;
+    color: #000;
+}
+
+.calendar-footer {
+    margin-top: 0.25rem;
+    padding-bottom: 4px;
+    background-color: orange;
+    font-size: 1rem;
+}
+
+.target-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Bottombar */
+
+.bottombar {
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: var(--bottombar-filter);
+    -webkit-filter: var(--bottombar-filter);
+}
+
+.bottombar-brand {
+    width: 40%;
+    display: inline-block;
+}
+
+.bottombar-text {
+    width: 50%;
+    text-align: end;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.social-group {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    margin: 1rem;
+    color: black;
+}
+
+#fb-icon:hover {
+    color: #4267B2;
+    filter: var(--bottombar-filter);
+}
+
+#ig-icon:hover {
+    color: #8a3ab9;
+    filter: var(--bottombar-filter);
+}
+
+#tw-icon:hover {
+    color: #1DA1F2;
+    filter: var(--bottombar-filter);
+}
+
+#wa-icon:hover {
+    color: #128C7E;
+    filter: var(--bottombar-filter);
+}
+
+/* Theme Modal */
+
+.theme-group {
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar-brand {
+        width: 75%;
+    }
+
+    .nav-top {
+        margin-top: 1rem;
+    }
+
+    .nav-bottom {
+        margin-bottom: 1rem;
+    }
+
+    /* Body */
+
+    .content-container {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Event */
+
+    .backdrop {
+        background-position: left;
+    }
+
+    .event-dock {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 95%;
+        align-self: center;
+    }
+
+    .event-name {
+        font-size: 2.5rem;
+    }
+
+    /* Bottombar */
+
+    .bottombar {
+        display: block;
+    }
+
+    .bottombar-brand {
+        width: 75%;
+    }
+
+    .bottombar-text {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
+    }
+}
+
+/* Ultra small screens */
+@media (max-width: 356px) {
+    .collected {
+        font-size: 1.5rem;
+    }
+
+    #target-days, #target-hours, #target-minutes, #target-seconds {
+        font-size: 1.5rem;
+    }
+
+    .calendar-footer {
+        font-size: 0.5rem;
+    }
+}
