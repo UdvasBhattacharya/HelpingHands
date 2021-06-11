@@ -1,10 +1,30 @@
-body
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: #ddd;
+.default, .lightmode {
+    --background-color: #f5f0e1;
+    --content-background-color: rgba(248, 233, 161, 0.9);
+    --text-color: #000;
+    --inverse-text-color: #fff;
+    --event-background-color: rgba(255, 255, 255, 0.9);
+    --bottombar-filter: invert(0%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #24305E;
+        --content-background-color: rgba(0, 0, 0, 0.9);
+        --text-color: #fff;
+        --inverse-text-color: #000;
+        --event-background-color: rgba(0, 0, 0, 0.9);
+        --bottombar-filter: invert(100%);
+    }
+}
+
+.darkmode {
+    --background-color: #24305E;
+    --content-background-color: #000;
+    --text-color: #fff;
+    --inverse-text-color: #000;
+    --event-background-color: rgba(0, 0, 0, 0.8);
+    --bottombar-filter: invert(100%);
 }
 
 /* Navbar */
@@ -57,90 +77,240 @@ body
     background-color: #29648a;
 }
 
-/* Navbar end */
+/* Body */
 
-.section
-{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ddd;
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
 }
-.container
-{
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-}
-.content-section
-{
-    float: left;
-    width: 40%;
-}
-.image-section
-{
-    float: right;
-    width: 40%;
-}
-.image-section img
-{
-    width: 100%;
-    height: auto;
-    margin-top:20%;
-}
-.content-section .title
-{
-    text-transform: uppercase;
-    font-size: 28px;
-}
-.content-section .content h3
-{
-    margin-top: 20px;
-    color: #5d5d5d;
-    font-size: 21px;
-}
-.content-section .content p
-{
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-}
-.content-section .content .button 
-{
-    margin-top: 30px;
-}
-.content-section .content .button a
-{
-    background-color: #3d3d3d;
-    padding: 12px 40px;
+
+a {
     text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    letter-spacing: 1.5px;
-}
-.content-section .content .button a:hover
-{
-    background-color: #a52a2a;
-    color: #fff;
-}
-.content-section, .social
-{
-    margin: 40px 40px;
-}
-.content-section .social i
-{
-    color: #a52a2a;
-    font-size: 30px;
-    padding:0px 10px;
-}
-.content-section .social i:hover
-{
-    color: #3d3d3d;
 }
 
-@media screen and (max-width: 768px)
-{
+h1 {
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+.content {
+    padding: 0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.row {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.team-img1 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/sumandran.jpeg');
+    background-size: cover;
+}
+.team-img2 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/shreyosi.jpeg');
+    background-size: cover;
+}
+
+.team-img3 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/udvas.jpeg');
+    background-size: cover;
+}
+.team-img4 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/atish.jpeg');
+    background-size: cover;
+}
+.team-img5 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/agnibesh.jpeg');
+    background-size: cover;
+}
+.team-img6 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/nasrin.jpeg');
+    background-size: cover;
+}
+.team-img7 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/sandip.jpeg');
+    background-size: cover;
+}
+.team-img8 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/tulika.jpeg');
+    background-size: cover;
+}
+.team-img9 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/ummar.jpeg');
+    background-size: cover;
+    background-position: -2rem ;
+    background-repeat: no-repeat;
+}
+.team-img10 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/shreya.jpeg');
+    background-size: cover;
+    background-position: 10px ;
+
+}
+.team-img11 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/saamyo.jpeg');
+    background-size: cover;
+}
+.team-img12 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/sourav.jpeg');
+    background-size: cover;
+}
+
+
+.team-overlay {
+    border-radius: 2.5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+    transition: 0.25s ease;
+}
+
+.team-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+/* Bottombar */
+
+.bottombar {
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: var(--bottombar-filter);
+    -webkit-filter: var(--bottombar-filter);
+}
+
+.bottombar-brand {
+    width: 40%;
+    display: inline-block;
+}
+
+.bottombar-text {
+    width: 50%;
+    text-align: end;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.social-group {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    margin: 1rem;
+    color: black;
+}
+
+#fb-icon:hover {
+    color: #4267B2;
+    filter: var(--bottombar-filter);
+}
+
+#ig-icon:hover {
+    color: #8a3ab9;
+    filter: var(--bottombar-filter);
+}
+
+#tw-icon:hover {
+    color: #1DA1F2;
+    filter: var(--bottombar-filter);
+}
+
+#wa-icon:hover {
+    color: #128C7E;
+    filter: var(--bottombar-filter);
+}
+
+/* Theme Modal */
+
+.modal-content {
+    background-color: var(--event-background-color);
+}
+
+.theme-group {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
     /* Navbar */
     .navbar-brand {
         width: 75%;
@@ -154,47 +324,21 @@ body
         margin-bottom: 1rem;
     }
 
-    /* Navbar end */
+    /* Bottombar */
 
-    .container
-    {
-        padding-top: 50px;
-    }
-    .content-section
-    {
-        float: none;
-        width: 100%;
+    .bottombar {
         display: block;
-        margin: auto;
     }
-    .image-section
-    {
-        float: none;
+
+    .bottombar-brand {
+        width: 75%;
+    }
+
+    .bottombar-text {
         width: 100%;
-        
-    }
-    .image-section img 
-    {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-    .content-section .title
-    {
-        text-align: center;
-        font-size: 19px;
-    }
-    .content-section .content .button
-    {
-        text-align: center;
-    }
-    .content-section .content .button a
-    {
-        padding: 9px 30px;
-    }
-    .content-section .social
-    {
-        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
     }
 }
