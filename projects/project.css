@@ -2,6 +2,7 @@
     --background-color: #f5f0e1;
     --content-background-color: rgba(248, 233, 161, 0.9);
     --text-color: #000;
+    --inverse-text-color: #fff;
     --event-background-color: rgba(255, 255, 255, 0.9);
     --bottombar-filter: invert(0%);
 }
@@ -11,6 +12,7 @@
         --background-color: #24305E;
         --content-background-color: rgba(0, 0, 0, 0.9);
         --text-color: #fff;
+        --inverse-text-color: #000;
         --event-background-color: rgba(0, 0, 0, 0.9);
         --bottombar-filter: invert(100%);
     }
@@ -20,6 +22,7 @@
     --background-color: #24305E;
     --content-background-color: #000;
     --text-color: #fff;
+    --inverse-text-color: #000;
     --event-background-color: rgba(0, 0, 0, 0.8);
     --bottombar-filter: invert(100%);
 }
