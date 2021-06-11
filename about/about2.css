@@ -103,6 +103,11 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.row {
+    width: 100%;
+    justify-content: space-around;
+}
+
 .team-img {
     border: 2px solid white;
     border-radius: 2.5%;
@@ -123,6 +128,7 @@ h1 {
     align-items: center;
     text-align: center;
     color: transparent;
+    transition: 0.25s ease;
 }
 
 .team-overlay:hover {
@@ -205,14 +211,14 @@ h1 {
     top: 112px;
   }
   
-  .float-tw {
+  .float-ig {
     top: 168px;
   }
   
-  .float-gp {
+  .float-wa {
     top: 224px;
   }
   
-  .float-rs {
+  .float-tw {
     top: 280px;
   }
