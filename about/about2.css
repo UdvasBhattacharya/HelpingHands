@@ -241,3 +241,59 @@ h1 {
   #float-tw:hover {
     color: #1DA1F2;
   }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    /* Navbar */
+
+    .navbar-brand {
+        width: 75%;
+    }
+
+    .nav-top {
+        margin-top: 1rem;
+    }
+
+    .nav-bottom {
+        margin-bottom: 1rem;
+    }
+
+    /* Bottombar */
+
+    .bottombar {
+        display: block;
+    }
+
+    .bottombar-brand {
+        width: 75%;
+    }
+
+    .bottombar-text {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        text-align: end;
+    }
+}
+
+@media (max-height: 340px) {
+    /* Floating Media Buttons */
+    
+    .float-fb {
+        display: none;
+    }
+
+    .float-ig {
+        display: none;
+    }
+
+    .float-wa {
+        display: none;
+    }
+
+    .float-tw {
+        display: none;
+    }
+}
