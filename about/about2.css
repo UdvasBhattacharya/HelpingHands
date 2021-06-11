@@ -111,15 +111,120 @@ h1 {
     justify-content: space-around;
 }
 
-.team-img {
+.team-img1 {
     border: 2px solid white;
     border-radius: 2.5%;
     width: 15rem;
     height: 15rem;
     display: inline-block;
-    background-image: url('/assets/udvas.jpg');
-    background-size: contain;
+    background-image: url('pictures/sumandran.jpeg');
+    background-size: cover;
 }
+.team-img2 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/shreyosi.jpeg');
+    background-size: cover;
+}
+
+.team-img3 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/udvas.jpeg');
+    background-size: cover;
+}
+.team-img4 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/atish.jpeg');
+    background-size: cover;
+}
+.team-img5 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/agnibesh.jpeg');
+    background-size: cover;
+}
+.team-img6 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/nasrin.jpeg');
+    background-size: cover;
+}
+.team-img7 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/sandip.jpeg');
+    background-size: cover;
+}
+.team-img8 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/tulika.jpeg');
+    background-size: cover;
+}
+.team-img9 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/ummar.jpeg');
+    background-size: cover;
+    background-position: -2rem ;
+    background-repeat: no-repeat;
+}
+.team-img10 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/shreya.jpeg');
+    background-size: cover;
+    background-position: 10px ;
+
+}
+.team-img11 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/saamyo.jpeg');
+    background-size: cover;
+}
+.team-img12 {
+    border: 2px solid white;
+    border-radius: 2.5%;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-image: url('pictures/sourav.jpeg');
+    background-size: cover;
+}
+
 
 .team-overlay {
     border-radius: 2.5%;
@@ -176,124 +281,68 @@ h1 {
 /* Floating Media Buttons */
 
 .fl-fl {
-  background: var(--inverse-text-color);
-  letter-spacing: 3px;
-  padding: 0.5rem 0.7rem 0.5rem 0.8rem;
-  position: fixed;
-  right: 0rem;
-  z-index: 1000;
-  font: normal normal 10px Arial;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
+    background: var(--inverse-text-color);
+    letter-spacing: 3px;
+    padding: 0.5rem 0.7rem 0.5rem 0.8rem;
+    position: fixed;
+    right: 0rem;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
   
-.fa {
-  font-size: 20px;
-  color: var(--text-color);
-  padding: 10px 0;
-  width: 40px;
-  margin-left: 8px;
-}
+  .fa {
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
   
-.fl-fl:hover {
-  right: 0;
-}
+  .fl-fl:hover {
+    right: 0;
+  }
   
-.fl-fl a {
-  color: var(--text-color);
-  text-decoration: none;
-  text-align: center;
-  line-height: 43px!important;
-  vertical-align: top!important;
-}
+  .fl-fl a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px!important;
+    vertical-align: top!important;
+  }
   
-.float-fb {
-  top: 112px;
-}
+  .float-fb {
+    top: 112px;
+  }
 
-#float-fb:hover {
-  color: #4267B2;
-}
+  #float-fb:hover {
+      color: #4267B2;
+  }
   
-.float-ig {
-  top: 168px;
-}
+  .float-ig {
+    top: 168px;
+  }
 
-#float-ig:hover {
-  color: #8a3ab9;
-}
+  #float-ig:hover {
+    color: #8a3ab9;
+  }
   
-.float-wa {
-  top: 224px;
-}
+  .float-wa {
+    top: 224px;
+  }
 
-#float-wa:hover {
-  color: #128C7E;
-}
+  #float-wa:hover {
+    color: #128C7E;
+  }
   
-.float-tw {
-  top: 280px;
-}
+  .float-tw {
+    top: 280px;
+  }
 
-#float-tw:hover {
-  color: #1DA1F2;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    /* Navbar */
-
-    .navbar-brand {
-        width: 75%;
-    }
-
-    .nav-top {
-        margin-top: 1rem;
-    }
-
-    .nav-bottom {
-        margin-bottom: 1rem;
-    }
-
-    /* Bottombar */
-
-    .bottombar {
-        display: block;
-    }
-
-    .bottombar-brand {
-        width: 75%;
-    }
-
-    .bottombar-text {
-        width: 100%;
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-        padding: 0.5rem;
-        text-align: end;
-    }
-}
-
-@media (max-height: 340px) {
-    /* Floating Media Buttons */
-    
-    .float-fb {
-        display: none;
-    }
-
-    .float-ig {
-        display: none;
-    }
-
-    .float-wa {
-        display: none;
-    }
-
-    .float-tw {
-        display: none;
-    }
-}
+  #float-tw:hover {
+    color: #1DA1F2;
+  }
