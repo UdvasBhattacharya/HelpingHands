@@ -2,6 +2,7 @@
     --background-color: #f5f0e1;
     --content-background-color: rgba(248, 233, 161, 0.9);
     --text-color: #000;
+    --inverse-text-color: #fff;
     --event-background-color: rgba(255, 255, 255, 0.9);
     --bottombar-filter: invert(0%);
 }
@@ -11,6 +12,7 @@
         --background-color: #24305E;
         --content-background-color: rgba(0, 0, 0, 0.9);
         --text-color: #fff;
+        --inverse-text-color: #000;
         --event-background-color: rgba(0, 0, 0, 0.9);
         --bottombar-filter: invert(100%);
     }
@@ -20,6 +22,7 @@
     --background-color: #24305E;
     --content-background-color: #000;
     --text-color: #fff;
+    --inverse-text-color: #000;
     --event-background-color: rgba(0, 0, 0, 0.8);
     --bottombar-filter: invert(100%);
 }
@@ -173,7 +176,7 @@ h1 {
 /* Floating Media Buttons */
 
 .fl-fl {
-    background: #000000;
+    background: var(--inverse-text-color);
     letter-spacing: 3px;
     padding: 0.5rem 0.7rem 0.5rem 0.8rem;
     position: fixed;
@@ -189,7 +192,7 @@ h1 {
   
   .fa {
     font-size: 20px;
-    color: #fff;
+    color: var(--text-color);
     padding: 10px 0;
     width: 40px;
     margin-left: 8px;
@@ -200,7 +203,7 @@ h1 {
   }
   
   .fl-fl a {
-    color: #fff !important;
+    color: var(--text-color);
     text-decoration: none;
     text-align: center;
     line-height: 43px!important;
@@ -210,15 +213,31 @@ h1 {
   .float-fb {
     top: 112px;
   }
+
+  #float-fb:hover {
+      color: #4267B2;
+  }
   
   .float-ig {
     top: 168px;
+  }
+
+  #float-ig:hover {
+    color: #8a3ab9;
   }
   
   .float-wa {
     top: 224px;
   }
+
+  #float-wa:hover {
+    color: #128C7E;
+  }
   
   .float-tw {
     top: 280px;
+  }
+
+  #float-tw:hover {
+    color: #1DA1F2;
   }
