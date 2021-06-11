@@ -80,7 +80,13 @@
 /* Body */
 
 body {
-    background-color: var(--background-color);
+    
+    
+    background: url(favicon.png);
+    background-size: 30%;
+    background-position: center;
+    background-color: var(--background-color); 
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
 }
