@@ -119,7 +119,7 @@ h1 {
 .backdrop-3 {
     background-image: url('pictures/food4.jpg');
     background-position: center;
-    background-size: 90%;
+    background-size: cover;
     
     border-radius: 0.25rem;
     text-align: center;
@@ -132,16 +132,16 @@ h1 {
     text-align: center;
 }
 .backdrop-5 {
-    background-image: url('pictures/cake\ back.jpeg');
+    background-image: url('pictures/cake\ back.jpg');
     background-position: center;
-    background-size: 80%;
+    background-size: cover;
     border-radius: 0.25rem;
     text-align: center;
 }
 .backdrop-6 {
     background-image: url('pictures/old\ back.jpeg');
-    background-position: center;
-    background-size: 90%;
+    background-position: top;
+    background-size: cover;
     border-radius: 0.25rem;
     text-align: center;
 }

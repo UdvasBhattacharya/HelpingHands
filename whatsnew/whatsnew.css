@@ -220,4 +220,14 @@ h1 {
         padding: 0.5rem;
         text-align: end;
     }
+    .gorapic1
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .gorapic2
+    {
+        width: 100%;
+    }
 }
